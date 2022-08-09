@@ -1,0 +1,401 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+html {
+    max-width: 100%;
+    height: auto !important;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #f8f8f8;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
+.mb-40 {
+    margin-bottom: 40px;
+}
+
+.pt-1 {
+    padding-top: 5px;
+}
+
+.pb-50 {
+    padding-bottom: 50px;
+}
+
+header {
+    background-color: #effeff;
+    height: 6rem;
+    line-height: 6rem;
+    padding: 0 !important;
+    margin: -10px -10px  0 -10px;
+    position: sticky;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+}
+
+header a {
+    display: inline-block;
+    margin-left: 10px;
+    line-height: 6rem;
+}
+
+.navbar {
+    display: flex;
+}
+
+.logo {
+    margin: 20px 0 0 20px;
+    width: 180px;
+    line-height: 50%;
+    color: #2b9ea4;
+}
+
+.description {
+    font-weight: bold;
+    font-size: 24px;
+    color: #2b9ea4;
+    float: right;
+    margin: 0;
+}
+
+.hero {
+    color: #2b9ea4;
+    padding-top: 30px;
+}
+
+.info {
+    display: inline-block;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.img {
+    max-width: 100%;
+    max-height: 100%;
+    display: none;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.contact {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+footer {
+    height: 40px;
+    background-color: black;
+    margin-top: 25px;
+    max-width: 105% !important;
+}
+
+/* MOBIL */
+@media screen and (max-width: 767px) {
+    header {
+        background-color: #effeff;
+        height: 9rem;
+        line-height: 3.5rem;
+        padding: 0 !important;
+        margin: -10px -10px  0 -10px;
+        position: sticky;
+        z-index: 999;
+        top: 0;
+        box-shadow: 0 -6px 10px 5px rgba(0,0,0,0.5);
+    }
+
+    header a {
+        margin-left: 10px;
+        line-height: 6rem;
+    }
+
+    .navbar {
+        display: block;
+        height: 179px !important;
+    }
+
+    .hero {
+        padding: 39px 0 0 20px !important;
+        margin: 0;
+    }
+
+    .info {
+        padding-left: 20px;
+    }
+
+    .info-mobil {
+        padding-bottom: 50px;
+        padding-left: 20px;
+    }
+
+    .spacing {
+        margin: 30px 0 20px 0 !important;
+    }
+
+    .description {
+        line-height: 30px;
+        margin-left: 10px;
+        float: none;
+        width: 90%;
+        padding-left: 10px;
+    }
+    .mapa-mobil {
+        display: block;
+    }
+    #info-tablet {
+        display: none;
+    }
+
+    #ico {
+        margin-top: 23px;
+    }
+
+    footer {
+        margin-top: 0;
+        height: 48px !important;
+    }
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    body {
+        margin: 0;
+    }
+
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .hero {
+        padding: 46px 0 14px 27px !important;
+        margin: 0;
+    }
+
+    .logo {
+        padding: 32px 0 32px 27px;
+        margin: 0;
+    }
+
+    .info {
+        line-height: 24px;
+        margin-bottom: 0;
+        padding-left: 27px;
+    }
+
+    .info-tablet {
+        padding-bottom: 50px;
+    }
+
+    .address {
+        margin: 0 !important;
+        display: flex;
+    }
+
+    .contact {
+        line-height: 18px;
+    }
+
+    .description {
+        line-height: 6rem;
+        text-align: right;
+        width: 70%;
+        padding-right: 32px;
+        font-size: 22px;
+    }
+
+    .mapa-tablet {
+        display: block;
+        background-color: white;
+    }
+    #ico {
+        display: none;
+    }
+
+    .footer {
+        height: 114px;
+        margin-top: 0;
+    }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1200px) {
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: white;
+    }
+
+    .navbar {
+        justify-content: space-between !important;
+    }
+    .navbar-desktop {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .fd-row {
+        flex-direction: row !important;
+    }
+
+    .desktop-d-flex {
+        display: flex;
+    }
+
+    .header-desktop {
+        flex-direction: row;
+        min-height: 100px;
+        padding: 0 60px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1200px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        line-height: 6rem;
+        position: relative;
+        font-size: 32px;
+        max-height: 33px;
+        max-width: 180px;
+        margin: 15px 0 20px 0;
+    }
+
+    .frame {
+        height: 33px;
+        width: 180px;
+        white-space: nowrap;
+        text-align: center;
+        margin: 1em 0;
+    }
+
+    .helper {
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+    }
+
+    #hero {
+        font-size: 20px;
+    }
+
+    .container {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .hero {
+        font-size: 32px;
+        padding-top: 0;
+        padding-left: 10px;
+        margin: 0 !important;
+    }
+
+    .navbar {
+        justify-content: space-around;
+    }
+
+    .description {
+        line-height: 6rem;
+        margin-left: 50px;
+        font-size: 32px;
+    }
+
+    .info {
+        line-height: 1.3rem;
+    }
+
+    .address {
+        position: absolute;
+        margin-top: 150px;
+        text-align: right;
+        left: 0;
+        right: -250px;
+        background-color: #f8f8f8;
+        padding: 40px 60px 0 60px;
+    }
+
+    .address-inner {
+        max-width: 560px;
+        text-align: left;
+        display: inline-block;
+        padding-left: 20px;
+
+    }
+
+    .address-placeholder {
+        min-width: calc(50% - 250px) !important;
+        position: relative;
+        display: block !important;
+    }
+
+    .desktop-sq {
+        margin: 15% 0 20px 0;
+        position: absolute;
+        background-color: #f8f8f8;
+        width: 55%;
+        max-width: 55%;
+        max-height: 360px;
+    }
+
+    .mapa-desktop {
+        overflow: hidden !important;
+        z-index: -1;
+        display: block !important;
+        max-width: 100%;
+        width: 100% !important;
+    }
+
+    footer {
+        clear: right;
+        height: 139px;
+        margin-top: 0;
+    }
+
+    #ico {
+        display: none;
+    }
+
+    .img {
+        width: 75%;
+    }
+
+    .row {
+        display: flex;
+    }
+
+    .contact {
+        margin-bottom: 60px;
+    }
+
+    .column-30 {
+        flex: 30%;
+        padding: 5px 20px 5px;
+        margin-left: 30%;
+    }
+    .column-70 {
+        flex: 70%;
+    }
+}
